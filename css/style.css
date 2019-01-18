@@ -5,14 +5,18 @@ body {
     font-size:10px;
 }
 
-.textsection {
+.main {
     background-color:white;
-    padding:20px;
-    margin:20px;
     border-style: solid;
     border-color: #A9A9A9;
     border-width: 1px;
     border-radius: 15px;
+}
+.textsection {
+    
+    padding:20px;
+    margin:20px;
+    
 }
 
 .profilepic {
