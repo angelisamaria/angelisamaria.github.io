@@ -8,70 +8,59 @@
 <!-- font awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
+<ul id="menu" class="menu no-bullet" >
+    <li><a data-page="information" href="#"><h3> Information </h3> </a></li>
+    <li><a data-page="portfolio" href="#"><h3> Portfolio </h3> </a></li> 
+    <li><a data-page="blog" href="#"><h3> Blog </h3> </a></li>
+    <li><a data-page="contact" href="#"><h3> Contact Me </h3> </a></li>
+</ul>
 
-<nav class="navbar fixed-top navbar-light bg-light">
-        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-link" href="#portfolio">Portfolio</a>
-        <a class="nav-link disabled" href="#contact">Contact</a>
-</nav>
-
-<body>
-
-<div class="container main">
-  <div class="row">
-    <div class="col">
-      <h1 id="home">Hi, I'm Angelisa</h1>
-    </div>
-  </div>
-  <div class="row textsection">
-    <div class="col">
-      <img class="profilepic" src="http://i66.tinypic.com/15813ix.jpg" style="width:300px">
-    </div>
-    <div class="col">
-      <h2>Software Engineer</h2>
-      <h5>Problem Solving, Collaboration and Creativity</h5>
-      <ul>
-      <li>I previously worked as a filmmaker on projects like <a href="http://losingsightofshore.com/" target="_blank">this</a> and <a href="https://www.instagram.com/p/Bggzz6ogURx/?hl=en" target="_blank">this</a></li>
-      <li>I found myself interested in the applications and software I was using and began to self-teach myself programming</li>
-      <li>Now as a Software Engineer, I apply my visual and communication skills toward my coding process to benefit users like myself</li>
-      </ul>
-      </p>
-    </div>
-  </div>
-  <div class="row">
-    <h2 id="portfolio">Portfolio</h2>
-  </div>
-  <div class="row textsection">
-    <!--       <p>Click here for my <a href="#">Resume</a></p> -->
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="http://i63.tinypic.com/2qu0sbn.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Build a Crew</h5>
-          <p class="card-text">A tool for film producers to manage their crewmembers, schedules and projects in one place.</p>
-          <a href="https://github.com/angelisamaria/Build-A-Crew" target="_blank" class="btn btn-outline-dark">View</a>
+<div id="pages">
+    <div id="information" class="page" data-page="information">
+        <div class="row">
+            <div class="columns large-6">
+                <h1> About Me </h1>
+                <p> Lorem ipsum information </p>
+            </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Guess the Capital</h5>
-          <p class="card-text">A guessing game to guess the capital of a country, written in Python.</p>
-          <a href="https://github.com/angelisamaria/guessthecapital" target="_blank" class="btn btn-outline-dark">View</a>
-        </div>
-      </div>
-  </div>
-  <div class="row textsection">
-    <div class="col" id="contact">
-      <h2>Let's Connect</h2>
-      <span>
-        <button type="button" class="btn btn-outline-dark" href="mailto:angelisacandler@gmail.com"><i class="fas fa-envelope"></i> Email Me</button>
-        <button type="button" class="btn btn-outline-dark" href="https://github.com/angelisamaria"><i class="fab fa-github"></i> Github</button>
-        <button type="button" class="btn btn-outline-dark" href="https://twitter.com/iamangelisa"><i class="fab fa-twitter"></i> Twitter</button>
-        <button type="button" class="btn btn-outline-dark" href="https://www.linkedin.com/in/angelisacandler/"><i class="fab fa-linkedin-in"></i> LinkedIn</button>
-      </span>
     </div>
-  </div>
+    <div id="portfolio" class="page hide" data-page="portfolio">
+        <div class="row">
+            <div class="columns large-6">
+                <h1> Portfolio </h1>
+                <p> Lorem ipsum portfolio </p>
+            </div>
+        </div>
+    </div>
+    <div id="blog" class="page hide" data-page="blog">
+        <div class="row">
+            <div class="columns large-6">
+                <h1> Blog </h1>
+                <p> Lorem ipsum blog </p>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="page hide" data-page="contact">
+        <div class="row">
+            <div class="columns large-6">
+                <h1> Contact Me </h1>
+                <p> Lorem ipsum contact </p>
+            </div>
+        </div>
+    </div>
 </div>
+<script>
+
+$(document).ready(function() {
+    $("#menu li a").on('click', function() {
+        var page = $(this).data('page');
+        $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
+            $(this).addClass('hide');
+            $('#pages .page[data-page="'+page+'"]').fadeIn('slow').removeClass('hide');
+        });
+    });
+});
+</script>
 <footer>
 Made with &hearts; by Angelisa Maria
 </footer>
