@@ -1,5 +1,5 @@
 body {
-    margin-top: 65px; 
+    margin: 65px auto auto auto; 
     width: 70%;
     background-color:pink;
 }
