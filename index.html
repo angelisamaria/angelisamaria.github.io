@@ -7,6 +7,18 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 <!-- font awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script>
+
+$(document).ready(function() {
+    $("#menu li a").on('click', function() {
+        var page = $(this).data('page');
+        $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
+            $(this).addClass('hide');
+            $('#pages .page[data-page="'+page+'"]').fadeIn('slow').removeClass('hide');
+        });
+    });
+});
+</script>
 </head>
 <ul id="menu" class="menu no-bullet" >
     <li><a data-page="information" href="#"><h3> Information </h3> </a></li>
@@ -49,18 +61,7 @@
         </div>
     </div>
 </div>
-<script>
 
-$(document).ready(function() {
-    $("#menu li a").on('click', function() {
-        var page = $(this).data('page');
-        $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
-            $(this).addClass('hide');
-            $('#pages .page[data-page="'+page+'"]').fadeIn('slow').removeClass('hide');
-        });
-    });
-});
-</script>
 <footer>
 Made with &hearts; by Angelisa Maria
 </footer>
