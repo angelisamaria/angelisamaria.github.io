@@ -7,66 +7,42 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 <!-- font awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-<script>
+</head>
+<body>
 
-$(document).ready(function() {
-    $("#menu li a").on('click', function(e) {
-        // prevent default behaviour of the anchor tag
-        e.preventDefault();
-        // save the data attribute for the anchor tag that was clicked
-        var page = $(this).data('page');
-        // find the current 'page' element that doesn't have the class .hide -- this is a css selector
-        $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
-            // adds .hide to the element that was showing after it has faded out
-            $(this).addClass('hide');
-            // remove hidden class from element with the same data attribute as the anchor tag
-            $('#pages .page[data-page="'+page+'"]').fadeIn('slow').removeClass('hide');
-        });
-    });
+<script>
+    $('[class^="question"]').on('click', function(e){
+    e.preventDefault();
+    var numb = this.className.replace('question', '');
+    $('[id^="answer"]').hide();
+    $('#answer' + numb).show();
 });
 </script>
-</head>
-<ul id="menu" class="menu no-bullet" >
-    <li><a data-page="information" href="#"><h3> Information </h3> </a></li>
-    <li><a data-page="portfolio" href="#"><h3> Portfolio </h3> </a></li> 
-    <li><a data-page="blog" href="#"><h3> Blog </h3> </a></li>
-    <li><a data-page="contact" href="#"><h3> Contact Me </h3> </a></li>
-</ul>
-
-<div id="pages">
-    <div id="information" class="page" data-page="information">
-        <div class="row">
-            <div class="columns large-6">
-                <h1> About Me </h1>
-                <p> Lorem ipsum information </p>
-            </div>
-        </div>
-    </div>
-    <div id="portfolio" class="page hide" data-page="portfolio">
-        <div class="row">
-            <div class="columns large-6">
-                <h1> Portfolio </h1>
-                <p> Lorem ipsum portfolio </p>
-            </div>
-        </div>
-    </div>
-    <div id="blog" class="page hide" data-page="blog">
-        <div class="row">
-            <div class="columns large-6">
-                <h1> Blog </h1>
-                <p> Lorem ipsum blog </p>
-            </div>
-        </div>
-    </div>
-    <div id="contact" class="page hide" data-page="contact">
-        <div class="row">
-            <div class="columns large-6">
-                <h1> Contact Me </h1>
-                <p> Lorem ipsum contact </p>
-            </div>
-        </div>
-    </div>
+<div class="new_member_box"> 
+    <a href="#" class="question1"><h4>Vision</h4></a>
 </div>
+
+<div class="new_member_box"> 
+    <a href="#" class="question2"><h4>Church History</h4></a>
+</div>
+
+<div class="new_member_box"> 
+    <a href="#" class="question3"><h4>Becoming a Member</h4></a>
+</div>
+<div class="new_member_box"> 
+    <a href="#" class="question4"><h4>Pastor-in-Training</h4></a>
+</div>
+
+<div class="clear" class="question"></div>
+
+<div id="answer1">1</div>
+<div id="answer2">2</div>
+<div id="answer3">3</div>
+<div id="answer4">4</div>
+
+<div class="new_member_box_display" id="answer">Text will appear here when one of the tabs above is clicked</div>
+
+
 
 <footer>
 Made with &hearts; by Angelisa Maria
