@@ -1,6 +1,5 @@
 body {
     margin-top: 65px; 
-    margin: 60px auto;
     width: 70%;
     background-color:pink;
 }
@@ -24,9 +23,6 @@ body {
     margin:5px;
 }
 
-.main {
-  margin-top: 65px; 
-}
 
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
