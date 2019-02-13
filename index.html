@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -18,14 +19,122 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="favi.ico"/>
   </head>
-  
-<body>
-  <h1>Hi! I'm under construction! Please visit my <a href="https://twitter.com/iamangelisa"><i class="fab fa-twitter"></i> Twitter</a> for updates.</h1>
-</body>
+  <body>
+    <nav class="site-header sticky-top py-1">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="py-2" href="#home">
+      <i class="far fa-hand-spock"></i>
+    </a>
+    <a class="py-2 d-none d-md-inline-block" href="#about">About</a>
+    <a class="py-2 d-none d-md-inline-block" href="#skills">Skills</a>
+    <a class="py-2 d-none d-md-inline-block" href="#portfolio">Portfolio</a>
+    <a class="py-2 d-none d-md-inline-block" href="#contact">Contact</a>
+  </div>
+</nav>
 
-<footer class="container py-3">
+<div class="position-relative p-3 p-md-5 m-md-3 text-center bg-light" id="home">
+  <div class="col-md-7 p-lg-5 mx-auto my-5">
+    <!-- http://www.heropatterns.com/ -->
+    <h2>{'Angelisa Candler': 'Software Engineer'}</h2>
+  </div>
+  <!-- cool background animations here -->
+</div>
+<!-- about me -->
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="about">
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">About Me</h2>
+        <div class="media mx-auto">
+            <img class="align-self-center mr-3" src="angelisa.jpeg" height="200px" alt="Generic placeholder image">
+            <div class="media-body" style="text-align: left;">
+              <p class="lead">
+                I'm a software engineer interested in both backend and frontend based in San Francisco, CA! I am passionate about finding solutions, writing clean code and learning anything that comes my way.
+              </p>
+                <p>
+                  <a class="btn btn-outline-dark" href="#contact"><i class="fas fa-hand-peace"></i> Contact</a>
+                </p>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+<!-- skills -->
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="skills">
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+      <h2 class="display-5">Languages</h2>
+      <p class="lead">Python (3.6, 3.7)<br>JavaScript (ES6, ES7)<br>HTML5<br>CSS3<br>SQL</p>
+    </div>
+  </div>
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Frameworks & Libraries</h2>
+        <p class="lead">Flask<br>Express<br>jQuery<br>Bootstrap<br>React<br>Redux</p>
+      </div>
+    </div>
+    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="display-5">Database & Tools</h2>
+          <p class="lead">PostgreSQL<br>MongoDB<br>Git<br>GitHub<br>Vagrant</p>
+        </div>
+      </div>
+</div>
+
+<!-- portfolio -->
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="portfolio">
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+          <h2 class="display-5">Portfolio</h2>
+        </div>
+      <div class="media mx-auto">
+        <img class="align-self-center mr-3" src="bac.gif" alt="Generic placeholder image">
+        <div class="media-body" style="text-align: left;">
+          <h5 class="mt-0">Build a Crew</h5>
+          <p>A tool for film producers to manage their crewmembers, schedules and projects in one place.</p>
+          <p>Stack: Flask, PostgreSQL, DarkSky API</p>
+          <p class="mb-0">
+            <!-- <a class="btn btn-outline-dark" href="https://github.com/angelisamaria/Build-A-Crew" target="_blank"><i class="fas fa-puzzle-piece"></i> View Project</a> -->
+            <a class="btn btn-outline-dark" href="https://github.com/angelisamaria/Build-A-Crew" target="_blank"><i class="fas fa-eye"></i> View Source</a>
+          </p>
+        </div>
+      </div>
+      <div class="media mx-auto">
+          <img class="align-self-center mr-3" src="teachat.png" height="250px" alt="Generic placeholder image">
+          <div class="media-body" style="text-align: left;">
+            <h5 class="mt-0">TeaChat</h5>
+            <p>A Twitter clone for tea lovers to post about their favorite teas.</p>
+            <p>Stack: Express, MongoDB, JavaScript</p>
+            <p class="mb-0">
+              <!-- <a class="btn btn-outline-dark" href="https://client-9fw44q8uy.now.sh/" target="_blank"><i class="fas fa-mug-hot"></i> View Project</a> -->
+              <a class="btn btn-outline-dark" href="https://github.com/angelisamaria/Build-A-Crew" target="_blank"><i class="fas fa-eye"></i> View Source</a>
+            </p>
+          </div>
+        </div>
+    <div style="height:20px;"></div>
+  </div>
+</div>
+
+<!-- contact -->
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="contact">
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Let's Connect</h2>
+        <span>
+          <a class="btn btn-outline-dark" href="mailto:angelisacandler@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Email Me</a>
+          <a class="btn btn-outline-dark" href="https://github.com/angelisamaria" target="_blank"><i class="fab fa-github"></i> Github</a>
+          <a class="btn btn-outline-dark" href="https://twitter.com/iamangelisa" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+          <a class="btn btn-outline-dark" href="https://www.linkedin.com/in/angelisacandler/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+        </span>
+      </div>
+    </div>
+</div>
+
+<!-- footer -->
+<footer class="container py-3 footer">
   <i>Made with <b>&hearts;</b> by Angelisa Maria</i>
 </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
