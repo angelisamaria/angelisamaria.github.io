@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background-color:#4B7A8C;
+    background-color:#d3b4ba;
     color:#E1C0D2;
     padding:5rem;
     font-family: 'Quicksand', sans-serif;
@@ -24,17 +24,17 @@ body {
 }
 
 .btn:hover {
-    background-color:#E1C0D2;
-    color:#4B7A8C;
+    background-color:#000;
+    color:#d3b4ba;
 
 }
 
 a {
-    color:#E1C0D2;
+    color:#000;
 }
 
 a:hover {
-    color:#E1C0D2;
+    color:#7D314C;
 }
 
 
@@ -43,7 +43,8 @@ a:hover {
 }
 
 p {
-    color:#172727;
+    color:#000;
+    font-size: 24px;
 }
 
 .column {
@@ -51,13 +52,15 @@ p {
 }
 
 .footer {
-    background-color:#4B7A8C;
+    background-color:#d3b4ba;
+    color:#7D314C;
+    font-size:24px;
 
 }
 
 .bold {
-    color:#E1C0D2;
-    font-size: 20px;
+    color:#7D314C;
+    font-size: 30px;
 }
 
 .img-fluid {
