@@ -68,3 +68,8 @@ p {
     height: auto;
 
 }
+
+li {
+    color:#000;
+    font-size: 24px;
+}
