@@ -53,6 +53,10 @@ a:active {
 padding-top: 1em;
 }
 
+.contact {
+    padding: 5px;
+}
+
 p {
     color:#000;
     font-size: 24px;
