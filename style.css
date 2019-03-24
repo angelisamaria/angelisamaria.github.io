@@ -29,17 +29,32 @@ body {
 
 }
 
-a {
+a:link {
+    text-decoration: none;
+    color:#000;
+}
+
+a:visited {
+    text-decoration: none;
     color:#000;
 }
 
 a:hover {
+    text-decoration: underline;
     color:#7D314C;
 }
 
+a:active {
+    text-decoration: underline;
+    color:#7D314C;
+}
 
 #contact {
-    padding-top: 1em;
+padding-top: 1em;
+}
+
+.link {
+    padding: 5px;
 }
 
 p {
@@ -54,13 +69,12 @@ p {
 .footer {
     background-color:#d3b4ba;
     color:#7D314C;
-    font-size:24px;
+    font-size:18px;
 
 }
 
 .bold {
     color:#7D314C;
-    font-size: 30px;
 }
 
 .img-fluid {
@@ -73,3 +87,28 @@ li {
     color:#000;
     font-size: 24px;
 }
+
+.portfolio-desc {
+    width:50%;
+}
+
+.portfolio-image {
+    width:50%;
+}
+
+button {
+    border-radius: 5px;
+    color: white;
+    background-color: #0F5897;
+  }
+  button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes background-color {
+    100% {
+      background-color: #4791d0;
+    }
+  }
