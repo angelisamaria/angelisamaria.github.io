@@ -29,17 +29,28 @@ body {
 
 }
 
-a {
+a:link {
+    text-decoration: none;
+    color:#000;
+}
+
+a:visited {
+    text-decoration: none;
     color:#000;
 }
 
 a:hover {
+    text-decoration: underline;
     color:#7D314C;
 }
 
+a:active {
+    text-decoration: underline;
+    color:#7D314C;
+}
 
 #contact {
-    padding-top: 1em;
+padding-top: 1em;
 }
 
 p {
