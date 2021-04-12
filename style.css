@@ -10,6 +10,13 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+.home {
+    background-color:#fff;
+    color:black;
+    padding:5rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
 .row {
     margin: 5px;
 }

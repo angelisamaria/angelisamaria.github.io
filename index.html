@@ -27,13 +27,21 @@
 
 <div id="home">
   <div class="col">
-   ~ in progress ~
+   <h1>current projects</h1>
+   <h2 id="teachatty">Teachat</h2>
+   <p></p>
   </div>
+  <div class="col">
+    <h1>previous projects</h1>
+    <h2 id="pokedex">Pokedex</h2>
+    <a href="https://github.com/angelisamaria/pokedex">View on GitHub</a>
+   </div>
 </div>
 
 <!-- contact -->
 <div id="contact">
     <div class="col">
+      <h1>contact me</h1>
     </div>
   </div>
 <!-- 
@@ -67,5 +75,11 @@
     <i>Made with <b>&hearts;</b> by Angelisa</i><br>
     AAA Accessible Colors by <a href="http://colorsafe.co/">colorsafe.co</a>
   </footer>
+  <script>
+    var myElem = document.getElementByID('teachatty');
+      myElem.onclick = function() {
+        console.log('test');
+      }
+  </script>
 </body>
 </html>
