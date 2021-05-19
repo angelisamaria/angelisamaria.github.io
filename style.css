@@ -1,116 +1,115 @@
 html {
-    scroll-behavior: smooth;
-    
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color:#fff;
-    color:black;
-    padding:5rem;
-    font-family: 'Quicksand', sans-serif;
+  background-color: #fff;
+  color: black;
+  padding: 5rem;
+  font-family: "Quicksand", sans-serif;
 }
 
 .home {
-    background-color:#fff;
-    color:black;
-    padding:5rem;
-    font-family: 'Quicksand', sans-serif;
+  background-color: #fff;
+  color: black;
+  padding: 5rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+.ul {
+  font-size: 5px;
 }
 
 .row {
-    margin: 5px;
+  margin: 5px;
 }
 
 /* buttons */
 .btn {
-    border-radius: 40px;
-    font-size: 1em;
-    border-width: 0px;
-    color:#172727;
-
+  border-radius: 40px;
+  font-size: 1em;
+  border-width: 0px;
+  color: #172727;
 }
 
 .btn:hover {
-    background-color:#000;
-    color:#fff;
-
+  background-color: #000;
+  color: #fff;
 }
 
 a:link {
-    text-decoration: none;
-    color:rgb(4, 114, 165);
+  text-decoration: none;
+  color: rgb(4, 114, 165);
 }
 
 a:visited {
-    text-decoration: none;
-    color:rgba(164, 108, 190, 0.534);
+  text-decoration: none;
+  color: rgba(164, 108, 190, 0.534);
 }
 
 a:hover {
-    text-decoration: underline;
-    color:rgba(0, 128, 107, 0.884);
+  text-decoration: underline;
+  color: rgba(0, 128, 107, 0.884);
 }
 
 a:active {
-    text-decoration: underline;
-    color:#000;
+  text-decoration: underline;
+  color: #000;
 }
 
 #contact {
-padding-top: 1em;
+  padding-top: 1em;
 }
 
 .link {
-    padding: 5px;
+  padding: 5px;
 }
 
 .column {
-    background-color:white;
+  background-color: white;
 }
 
 .footer {
-    background-color:#fff;
-    color:#000;
-    font-size:18px;
-
+  background-color: #fff;
+  color: #000;
+  font-size: 18px;
 }
 
 .bold {
-    color:#000;
+  color: #000;
 }
 
 .img-fluid {
-    max-width: 100%;
-    height: auto;
-
+  max-width: 100%;
+  height: auto;
 }
 
 li {
-    color:#000;
-    font-size: 24px;
+  color: #000;
+  font-size: 24px;
 }
 
 .portfolio-desc {
-    width:50%;
+  width: 50%;
 }
 
 .portfolio-image {
-    width:50%;
+  width: 50%;
 }
 
 button {
-    border-radius: 5px;
-    color: white;
-    background-color: #0F5897;
-  }
-  button:hover {
-    animation-name: background-color;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-  }
+  border-radius: 5px;
+  color: white;
+  background-color: #0f5897;
+}
+button:hover {
+  animation-name: background-color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
 
-  @keyframes background-color {
-    100% {
-      background-color: #4791d0;
-    }
+@keyframes background-color {
+  100% {
+    background-color: #4791d0;
   }
+}
