@@ -25,9 +25,9 @@ body {
   margin: 5px;
 }
 
-h1 h2 {
-  text-shadow: 2px 2px #000;
+h1 {
   color: rgb(0, 68, 255);
+  text-shadow: 2px 2px #000;
 }
 
 /* buttons */
